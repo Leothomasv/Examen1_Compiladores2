@@ -1,0 +1,7 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/leito/Examen1_Compiladores2'
+bison --defines=tokens.h -o calc_parser.cpp calc.y
+g++ --std=c++11 -g -c -o calc_parser.o calc_parser.cpp
+g++ --std=c++11 -g -o calc calc_parser.o calc_lexer.o main.o
+make: Leaving directory '/home/leito/Examen1_Compiladores2'
+ 
